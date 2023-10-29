@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+=============================
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+:root {
+    /* Cores principais */
+    --cor-cinza: #212121;
+    --cor-azul-escuro: #1F2532;
+    --cor-cinza-claro: #E0E5E9;
+    --cor-amarelo: #FDB813;
+    --cor-verde: #339e42;
+    --cor-vermelho: #E74C3C;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #1F2532;
+}
+
+body {
+    background-color: var(--cor-cinza-claro);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+/* Estilos para o menu burger */
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Posiciona o ícone do menu no lado direito */
+    cursor: pointer;
+    background-color: var(--cor-verde);
+    border-radius: 5px;
+    padding: 7px 7px;
+    margin: 5px;
+    position: absolute; /* Necessário para posicionar o menu no topo direito */
+    top: 50px;
+    left: none;
+    right: 10px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--cor-cinza-claro);
+    margin: 3px 0;
+}
+
+.container h1{
+    display: none;
+    margin: 0; /* Remove margens padrão do h1 */
+    font-size: 1.5em;
+    color: var(--cor-cinza-claro);
+    position: absolute; /* Necessário para posicionar o menu no topo direito */
+    top: 61px;
+    left: 20%; /* Posiciona o menu no topo direito */
+    z-index: 1000;
+}
+
+/* Estilos para o menu no topo do site */
+.menu {
+    list-style: none;
+    display: none;
+    background-color: var(--cor-azul-escuro);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    padding: 100px 20px 0 20px;
+    z-index: 999;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+
+.menu li {
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    border-bottom: 2px solid #283041;
+    color: var(--cor-cinza-claro);
+}
+
+.menu li:hover {
+    border-bottom: 2px solid var(--cor-cinza-claro);
+}
+
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: var(--cor-cinza-claro);
+    font-size: 1.5em;
+}
+
+/* Quando o item do menu está ativo (clicado) */
+.menu li:active a {
+    color: var(--cor-verde); /* Altera a cor da fonte para verde */
+}
+
+#logo {
+    width: 100vw;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.mySlides {
+display: none;
+animation: fade 5s linear infinite;
+}
+
+@keyframes fade {
+0% { opacity: 0; }
+25% { opacity: 1; }
+75% { opacity: 1; }
+100% { opacity: 0; }
+}
+
+img {
+width: 100%;
+height: 200px;
+}
+
+.slideshow-container h1 {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px 10px;
+    margin: 20px;
+}
+
+.slideshow-container p {
+    font-size: 1em;
+    padding: 0px 5px;
+    margin: 20px;
+    font-size-adjust: calc();
+}
+
+.slideshow-container button {
+    font-size: 1.1em;
+    background-color: var(--cor-verde);
+    color: var(--cor-cinza-claro);
+    padding: 15px 35px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.slideshow-container button:hover {
+    
+    background-color: #277731;
+}
+
+footer {
+    background-color: var(--cor-cinza);
+    text-align: center;
+}
+
+footer p {
+    color: var(--cor-cinza-claro);
+    padding: 20px 60px;
+}
+
+footer h3 {
+    color: var(--cor-verde);
+    padding: 5px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Conf para tablet */
+    body {
+        background-image: linear-gradient(to bottom, var(--cor-azul-escuro) 150px, white);
+    }
+    
+    
+}
+
+@media screen and (min-width: 992px) {/* Conf para desktop */
+    
+    body {
+        background-color: var(--cor-cinza-claro);
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Isso centraliza verticalmente na tela inteira. */
+      }
+    
+      .square {
+        width: 100px; /* Tamanho do quadrado */
+        height: 100px; /* Tamanho do quadrado */
+        background-color: white;
+      }
+
+    
+}
