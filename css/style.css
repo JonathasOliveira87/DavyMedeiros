@@ -37,12 +37,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  h1 {
-    color: var(--cor-verde);
-    font-size: 1.5em;
-  }
+h1 {
+color: var(--cor-verde);
+font-size: 1.5em;
+}
 
   
 /* Estilos para o menu burger */
@@ -169,7 +169,7 @@ button {
     background-color: var(--cor-verde);
     color: var(--cor-cinza-claro);
     padding: 15px 35px;
-    margin: 20px;
+    margin: 20px 20px 40px 20px;
     border-radius: 10px;
     border: 0px;
 }
@@ -179,15 +179,21 @@ button:hover {
 }
 
 .Parcerias {
-    position: relative; 
+    width: auto;
+    height: 410px;
+}
+
+#tecnologiaImg {
     height: 400px;
+    width: 100vw;
 }
 
 .Parcerias h2 {
+    max-width: 40%;
     font-size: 1.8em;
     position: relative;
-    top: -350px;
-    left: 0%;
+    top: -90%;
+    left: 50%;
     color: #fff;
     margin-bottom: 20px;
 }
@@ -196,18 +202,15 @@ button:hover {
     max-width: 45%;
     font-size: 1em;
     position: relative;
-    top: -350px;
+    top: -85%;
     left: 50%;
     color: #fff;
     margin-bottom: 20px;
 }
 
 .EngRH {
-    margin: 20px;
-    padding: 20px 20px 0 20px;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
+    margin: auto;
+    padding:  10px 50px;
     text-align: center;
 }
 
@@ -215,16 +218,13 @@ button:hover {
     text-align: center;
     margin: 10px;
 }
-#tecnologiaImg {
 
-    height: auto;
-    width: 100vw;
-}
+
 
 footer {
     background-color: var(--cor-cinza);
     text-align: center;
-    padding: 20px 60px;
+    padding: 20px 30px;
 }
 
 footer p {
