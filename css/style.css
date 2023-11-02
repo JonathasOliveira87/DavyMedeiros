@@ -238,9 +238,6 @@ footer h3 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Conf para tablet */
-    body {
-        background-image: var(--cor-cinza-claro);
-    }
 
     #logo {
         width: 100vw;
@@ -313,23 +310,107 @@ footer h3 {
 }
 
 @media screen and (min-width: 992px) {/* Conf para desktop */
-    
-    body {
-        background-color: var(--cor-cinza-claro);
+    #logo {
+        display: none;
     }
 
-    .container {
+    .slideshow-container {
         display: flex;
+        width: 100vw;
         justify-content: center;
         align-items: center;
-        height: 100vh; /* Isso centraliza verticalmente na tela inteira. */
+        margin: 0%;
+        padding: 0%;
       }
+      
+    .mySlides {
+        position: relative;
+        left: 40%;
+        width: 60%;
+        height: auto;
+    }
     
-      .square {
-        width: 100px; /* Tamanho do quadrado */
-        height: 100px; /* Tamanho do quadrado */
-        background-color: white;
-      }
+    .textIntro {
+        position: relative;
+        right: 60%;
+        width: 40%;
+        padding: 0 50px;
+    }
 
+    .textIntro  h1{
+        font-size: 2.5em;
+    }
+
+    .textIntro  p{
+        font-size: 1.2em;
+    }
+    
+    .mySlides img {
+        width: 100vw;
+        height: 75vh;
+    }
+
+    .Parcerias {
+        background-color: #00B4BB;
+        display: block;
+        height: 70vh;
+    }
+    
+    #tecnologiaImg {
+        background-color: #00B4BB;
+        width: 55vw;
+        height: 70vh;
+        margin: auto;
+    }
+
+    .Parcerias h2{
+        font-size: 3.5em;
+    }
+
+    .Parcerias p{
+        left: 37%;
+        font-size: 2em;
+        padding-bottom: 20px;
+    }
+
+    .EngRH {
+        display: flex;
+        margin: auto;
+        padding:  80px 200px 0px 200px;
+
+    }
+
+    .EngRH img {
+        width: 350px;
+    }
+
+    .EngRH H1 {
+        font-size: 2.2em;
+    }
+    
+    .EngRH p {
+        font-size: 1.2em;
+        padding: 20px 50px 5px 50px;
+        margin: 0;
+
+    }
+    
+    
+    
+    footer {
+        background-color: var(--cor-cinza);
+        text-align: center;
+        padding: 150px 30px;
+    }
+    
+    footer p {
+        color: var(--cor-cinza-claro);
+        padding: 10px 0px;
+    }
+    
+    footer h3 {
+        padding-top: 15px;
+        color: var(--cor-verde);
+    }
     
 }
