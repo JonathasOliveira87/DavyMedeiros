@@ -246,8 +246,8 @@ footer h3 {
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Conf para tablet */
 
     #logo {
-        width: 100vw;
-        height: 350px;
+        width: auto;
+        height: auto;
     }
 
     img {
