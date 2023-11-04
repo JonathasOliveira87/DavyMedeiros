@@ -314,6 +314,48 @@ footer h3 {
         display: none;
     }
 
+    /* Estilos para o menu burger */
+    .burger-menu {
+        display: none;
+    }
+
+
+    /* Estilos para o menu no topo do site */
+    .menu {
+        display: flex;
+        height: 100px;
+        padding: 20px;
+        position: fixed;
+        margin: 0;
+        background-color: var(--cor-cinza-claro);
+    }
+    
+    .menu li {
+        display: inline;
+        text-align: right;
+        margin: 0px;
+        padding: 0px;
+        border-bottom: 2px solid #283041;
+        color: var(--cor-cinza-claro);
+    }
+    
+    .menu li:hover {
+        border-bottom: 2px solid var(--cor-verde);
+    }
+    
+    
+    .menu li a {
+        text-decoration: none;
+        padding: 10px;
+        color: var(--cor-cinza);
+        font-size: 1.3em;
+    }
+    
+    /* Quando o item do menu está ativo (clicado) */
+    .menu li:active a {
+        color: var(--cor-verde); /* Altera a cor da fonte para verde */
+    }
+
     .slideshow-container {
         display: flex;
         width: 100vw;
