@@ -17,6 +17,7 @@ Grandes telas: acima de 1200px
     --cor-amarelo: #FDB813;
     --cor-verde: #339e42;
     --cor-vermelho: #E74C3C;
+    --cor-azul: #007bff;
 }
 
 * {
@@ -32,6 +33,8 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
+
 
 .container {
     display: flex;
@@ -71,12 +74,12 @@ font-size: 1.5em;
 
 .container h1{
     display: none;
-    margin: 0; /* Remove margens padrão do h1 */
+    margin: 0;
     font-size: 1.5em;
     color: var(--cor-cinza-claro);
-    position: absolute; /* Necessário para posicionar o menu no topo direito */
+    position: absolute;
     top: 61px;
-    left: 20%; /* Posiciona o menu no topo direito */
+    left: 20%;
     z-index: 1000;
 }
 
@@ -227,6 +230,76 @@ button:hover {
     margin: 10px;
 }
 
+.Contato {
+    margin: 70px 0px;
+    padding: 20px;
+}
+
+.Contato img {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 17px;
+}
+
+.Contato > div > h1 {
+    font-size: 0.9em;
+}
+
+.dadosContato {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.Contato > div > h1 {
+    font-size: 1.3em;
+    padding: 20px;
+}
+.Contato > div > h4 {
+    padding: 10px;
+}
+
+.contato {
+    padding: 0px;
+    margin: 0px;
+}
+/* Estilos para as etiquetas (labels) */
+label {
+    display: block; /* Coloca cada rótulo em uma nova linha */
+    margin: 5px 0 5px 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-cinza);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid var(--cor-azul);
+    outline: none;
+}
+
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
 footer {
     background-color: var(--cor-cinza);
     text-align: center;
@@ -286,7 +359,9 @@ footer h3 {
     .galeria {
         display: none;
     }
-
+    .Contato > div > h1 {
+        font-size: 1.1em;
+    }
     
     .EngRH {
         margin: auto;
@@ -340,19 +415,16 @@ footer h3 {
         height: 95px;
         padding: 25px;
         position: fixed;
-        justify-content: right;
+        justify-content: space-between;
         margin: 0;
-        padding-right: 250px;
         background-color: var(--cor-cinza-claro);
     }
 
     .menu img {
         display: block;
         position: relative;
-        justify-content: left;
         width: 110px;
         height: 110px;
-        right: 55%;
         animation:rotate-center .6s ease-in-out both;
         top: -40px;
     }
@@ -367,13 +439,11 @@ footer h3 {
     @keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
 
     .menu li {
-        display: inline;
-        text-align: right;
+        display: inline-block;
         margin: 0px;
         padding: 0px;
-        border-bottom: 0px solid #283041;
         color: var(--cor-cinza-claro);
-        margin-right: 10px;
+        border-bottom: none;
     }
     
     .menu li:hover {
@@ -390,7 +460,7 @@ footer h3 {
     
     /* Quando o item do menu está ativo (clicado) */
     .menu li:active a {
-        color: var(--cor-verde); /* Altera a cor da fonte para verde */
+        color: var(--cor-verde);
     }
 
 
@@ -418,7 +488,6 @@ footer h3 {
         color: var(--cor-cinza-claro);
         font-size: 3.5em;
         text-shadow:5px 6px 18px rgba(0, 0, 0, 0.815)
-  
     }
 
 
@@ -427,8 +496,8 @@ footer h3 {
         width: 100vw;
         justify-content: center;
         align-items: center;
-        margin: 0%;
-        padding: 0%;
+        margin: 0;
+        padding: 0;
       }
       
     .mySlides {
@@ -517,25 +586,35 @@ footer h3 {
         font-size: 1.2em;
         padding: 20px 50px 5px 50px;
         margin: 0;
-
     }
-    
-    
-    
+
+
+    .Contato{
+        display: flex;
+        margin: 20px 30px 10px 30px;
+        padding: 20px;
+    }
+
+
+
+    .Contato > div {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+
     footer {
-        background-color: var(--cor-cinza);
-        text-align: center;
         padding: 100px 30px;
     }
     
     footer p {
-        color: var(--cor-cinza-claro);
         padding: 10px 0px;
     }
     
     footer h3 {
         padding-top: 15px;
-        color: var(--cor-verde);
     }
     
 }
