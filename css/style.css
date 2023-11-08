@@ -169,7 +169,7 @@ height: 200px;
 }
 
 article {
-    margin-top: 6%;
+    margin: 90px 0px 0px 0px;
 }
 
 section {
@@ -268,8 +268,9 @@ button:hover {
 }
 
 .Contato {
+    width: 100%;
     background-color: #fff;
-    margin: -1.5% 20px 20px 20px;
+    margin: 90px 0px 0px 0px;
     padding: 35px 20px 20px 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -338,6 +339,63 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+.Sobre {
+    background-image: url(../img/homem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 95px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Sobre p {
+    max-width: 550px;
+}
+
+
+.Sobre h1 {
+    padding: 50px 0 20px 0;
+}
+
+
+.Sobre .container {
+    display: block;
+}
+
+.Sobre .cardEng {
+    width: 300px;
+    padding: 20px;
+    background-color: #D5DBFF;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.Sobre .cardEng  p{
+    padding: 10px 0 10px 0;
+}
+
+.Sobre .cardRh {
+    width: 300px;
+    padding: 20px;
+    background-color: #F9D7DC;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 140px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.Sobre .cardRh  p{
+    padding: 10px 0 10px 0;
 }
 
 footer {
@@ -428,7 +486,34 @@ footer h3 {
         margin: 0;
     }
     
-    
+    .Sobre {
+        margin-top: 95px;
+        padding: 25px 35% 20px 25px;
+    }
+
+    .Sobre p {
+        max-width: 450px;
+    }
+
+    .Sobre .container {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .Sobre .cardEng {
+        width: 200px;
+        padding: 20px;
+        background-color: #D5DBFF;
+        margin: 10px;
+    }
+
+    .Sobre .cardRh {
+        width: 200px;
+        padding: 20px;
+        background-color: #F9D7DC;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
     
     footer {
         background-color: var(--cor-cinza);
@@ -679,6 +764,7 @@ footer h3 {
     
     }
 
+
     .Contato > div {
         flex: 1;
         margin: 15px;
@@ -697,6 +783,63 @@ footer h3 {
 
     .dadosContato p{
         font-size: 1.1em;
+    }
+
+
+    .Sobre {
+        background-image: url(../img/homem.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 79%;
+        height: 580px;
+        margin: auto;
+        margin-top: 110px;
+        margin-bottom: 13px;
+        padding: 20px 35% 20px 50px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .Sobre .container {
+        display: flex;
+    }
+
+    .Sobre h1 {
+        padding: 50px 0 20px 0;
+    }
+
+    .Sobre p {
+        max-width: 800px;
+    }
+
+    .Sobre .container {
+        justify-content: left;
+        margin-top: 10px;
+    }
+
+    .Sobre .cardEng {
+        width: 200px;
+        padding: 22px;
+        background-color: #D5DBFF;
+        border-radius: 25px;
+        margin: 10px 5px 0 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .Sobre .cardEng  p{
+        padding: 10px 0 10px 0;
+    }
+    .Sobre .cardRh {
+        width: 200px;
+        padding: 22px;
+        background-color: #F9D7DC;
+        border-radius: 25px;
+        margin: 10px 0 0 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .Sobre .cardRh  p{
+        padding: 10px 0 10px 0;
     }
 
     footer {
